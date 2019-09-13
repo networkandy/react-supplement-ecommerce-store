@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Permanent+Marker&display=swap');
+
+
+
+body {
+    font-family: 'Oswald', sans-serif;
+
+    color: black;
+}
+
+header {
+    height: 200px;
+    width: 100%;
+    background: url('https://i.postimg.cc/B6wr6pCc/abs.jpg') no-repeat center center / cover;
+}
+
+
+/* navbar */
+
+nav {
+    /* background: #c9de96; 
+    background: -moz-linear-gradient(top, #c9de96 0%, #8ab66b 44%, #398235 100%); 
+    background: -webkit-linear-gradient(top, #c9de96 0%,#8ab66b 44%,#398235 100%); 
+    background: linear-gradient(to bottom, #c9de96 0%,#8ab66b 44%,#398235 100%); */
+    background: #28B463;
+}
+
+nav img {
+    height: 50px;
+    width: 50px;
+}
+
+nav button {
+    color: white;
+    text-transform: capitalize;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0.2rem 0.5rem;
+    transition: all 0.5s ease-in-out;
+}
+
+nav button:hover {
+    background: white;
+    border-color: lightblue;
+    color: darkblue;
+}
+
+nav ul li {
+    font-size: 1.2rem;
+}
+
+.nav-link:hover {
+    color: blue;
+}
+
+.marker-title {
+    font-family: 'Permanent Marker', cursive;
+    color: gold;
+}
+
+
+/* PRODUCTS */
+.card {
+    /* border-color: transparent; */
+    transition: all 0.5s linear;
+    margin: 10px;
+}
+
+
+.card:hover {
+    border: 2px green solid;
+    box-shadow: 10px 10px 10px grey;
+}
+
+.card:hover .card-footer{
+    background: lightgreen;
+}
+
+.img-container{
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img-top {
+    
+}
+
+.img-container:hover .card-img-top {
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.cart-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: white;
+    border-top-left-radius: 15px;
+}
+
+.cart-btn:hover {
+    background: greenyellow;
+}
+
+
+
+/* MODAL FOR SUPPLEMENTS */
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    
+}
+
+#inner-modal {
+    height: 100%;
+    background: white;
+}
+
+.item-added {
+    margin: 25px 0 25px 0;
+}
+
+.pop-btn {
+    margin: 10px;
+}
+
+.btn-black {
+    background: transparent;
+    text-transform: capitalize;
+    font-size: 0.8rem !important;
+    color: black;
+    border-radius: 0 !important;
+    border: 0.1rem solid black !important;
+    font-size: 18px!important;
+}
+
+.btn-black:hover {
+    background: black;
+    color: white;
+}
+
+.cart-icon {
+    color: grey;
+}
+
+.cart-icon:hover {
+    color: red;
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+
